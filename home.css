@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px; /* Adjust this value based on the height of your header */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero form input,
+.hero form button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.destinations {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.destinations h2 {
+    margin-bottom: 30px;
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destination {
+    position: relative;
+    width: calc(33.33% - 40px); /* Adjust the width as needed */
+    margin: 0 20px;
+    margin-bottom: 40px; /* Adjust spacing between rows */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.destination-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.destination:hover .destination-name {
+    opacity: 1;
+}
+
+.destination-content {
+    padding: 20px;
+}
+
+.destination h3 {
+    margin: 0;
+}
+
+.destination a {
+    text-decoration: none;
+    color: #333;
+}
+
+.about-section {
+    padding: 50px;
+    background: linear-gradient(to bottom right, #ff69b4, #800080); /* Light gray background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3em;
+    color: #f3f1f1; /* Dark text color */
+}
+
+.about-content {
+    text-align: justify;
+    line-height: 1.6;
+    color: #f0eaea; /* Medium gray text color */
+}
+
+.about-content p {
+    margin-bottom: 30px;
+    font-size: 1em;
+}
+
+/* Add hover effect for a subtle interaction */
+.about-section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Lift the section slightly on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 5px 0; /* Adjust margin for contact details */
+}
+
+.footer-contact {
+    font-size: 14px;
+    opacity: 0.8; /* Reduce opacity for a subtle effect */
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease; /* Add transition for hover effect */
+}
+
+.footer-contact a:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
